@@ -109,16 +109,15 @@ $("#flightInfo").on("click", function (event) {
 
 
 // recipe js (work in progress...)
+var appid = "3e9dee68";
+var key = "20737797ddbd5868c5c037017379a8e6";
+var queryURL = "https://api.edamam.com/search?q=pizza&app_id=" + appid + "&app_key=" + key;
 
-let APP_Id = "3e9dee68";
-let APIKey = "20737797ddbd5868c5c037017379a8e6";
+$.ajax({
+  url: queryURL,
+  method: "GET"
+}).then(function (response) {
 
-function searchRecipes(recipe) {
-  var queryURL = "https://api.edamam.com/search/recipe?app_id=3e9dee68&app_key=20737797ddbd5868c5c037017379a8e6";
-  $.ajax({
-    url: queryURL,
-    method: "GET"
-  }).then(function (response) {
-    console.log(response);
-  })
-}
+  console.log(queryURL);
+  console.log(response);
+});
