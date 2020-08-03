@@ -72,8 +72,6 @@
 
     
 
-    </section>
-
     <!-- Section - Search - Autocomplete -->
 
     <section id=autocomplete class="section section-search blue darken-1 white-text center scrollspy">
@@ -92,11 +90,6 @@
     </section>
 
 
-
-
-
-
-    </section>
     <section>
         <article class="bookIt">
 
@@ -172,24 +165,17 @@
 
     </article>
 
-    <!-- Container holding headings, paragraphs, lists, etc. -->
-    <article class="recipes">
-        <div class="row">
-            <div class="column">
-
-                <h1>Brazilian Recipes</h1>
-                <p>We're sorry, there are no Brazilian restaurants in your area. You may enjoy some of these
-                    delicious
-                    recipes from <i>myrecipe.com</i></p>
-
-            </div>
-
-            <!-- Container holding suggestions -->
-            <div class="column">
-                <!-- List of recommended recipes go here. -->
-            </div>
-        </div>
-    </article>
+    <!-- Recipe search section -->
+    <section>
+    <div class="container"></div>
+    <form id="recipe-form">
+        <label for="recipe-input">Search for recipes</label>
+        <input type="text" id="recipe-input">
+        <input id="find-recipe" type="submit" value="Recipe Search">
+    </form>
+    
+    <div id="recipe-view"></div>
+    </section>
 
     </section>
 
